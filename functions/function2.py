@@ -1,4 +1,8 @@
 def perform_action():
+    """
+
+    :return:
+    """
     try:
         sentence = input("Enter a sentence: ")
         words = sentence.split()

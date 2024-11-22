@@ -3,6 +3,9 @@ import os
 DATA_FILE = os.path.join(os.path.dirname(__file__), '..', 'data', 'data.txt')
 
 def display_data():
+    """
+
+    """
     try:
         with open(DATA_FILE, 'r') as file:
             data = file.read()
@@ -15,6 +18,10 @@ def display_data():
         print(f"An error occurred while reading the data file: {e}")
 
 def add_data(entry):
+    """
+
+    :param entry:
+    """
     try:
         with open(DATA_FILE, 'a') as file:
             file.write(entry + '\n')

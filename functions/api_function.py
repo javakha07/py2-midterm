@@ -2,6 +2,10 @@ import requests
 from .data_handler import add_data
 
 def call_external_api():
+    """
+
+    :return:
+    """
     try:
         api_key = "24U4897VFGCWKN64" #Не воруй
         symbol = input("Input stock symbol: ")

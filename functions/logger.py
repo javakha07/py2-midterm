@@ -4,6 +4,11 @@ from datetime import datetime
 LOG_FILE = os.path.join(os.path.dirname(__file__), '..', 'logs', 'app.log')
 
 def log_action(action, result):
+    """
+
+    :param action:
+    :param result:
+    """
     try:
         with open(LOG_FILE, 'a') as log_file:
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
