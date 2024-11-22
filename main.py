@@ -1,9 +1,10 @@
-import sys
+# import sys this is useless
 from colorama import init, Fore, Style
 from functions import function1, function2, api_function, data_handler, logger
 from utils import print_animation
 
-init(autoreset=True)
+# init(autoreset=True) # why autoreset
+init()
 
 def display_image():
     image = """
@@ -34,7 +35,8 @@ def main():
 
         if choice.lower() == 'exit' or choice == '5':
             print_animation("Exiting the program. Goodbye!", color=Fore.MAGENTA)
-            sys.exit()
+            # sys.exit() # using sys here is not necessary you could have just used return which will automtically exit the code so importing sys would be avoidede
+            return
         elif choice == '1':
             result = function1.perform_action()
             logger.log_action("Function1 executed", result)
